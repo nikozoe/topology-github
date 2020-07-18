@@ -15,7 +15,8 @@ cursor.execute("use ghtorrent_restore")
 
 fails=0
 
-
+#File with all project ids that were no forks of other projects (more than 30 million)
+# These ids were obtained in a separate database query
 idrange=pickle.load(open("nofork_ids.p", "rb"))
 print("got id_list. length: ", len(idrange))
 
@@ -26,7 +27,7 @@ chunk_no=100
 idlists=chunkify(idrange,chunk_no)
 
 for li_n,li in enumerate(idlists[:50]):
-    with open("mergeOnlyEarlier/pickle_graphs_all_randSample_noFork_6months_chunk"+str(li_n)+".gpickle", "wb") as f:
+    with open("path/to/folder/pickle_graphs_all_randSample_noFork_6months_chunk"+str(li_n)+".gpickle", "wb") as f:
         for i,n_id in enumerate(li):
             try: 
                 sql_str2="""
