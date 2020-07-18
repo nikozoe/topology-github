@@ -6,6 +6,11 @@ Gousios, G. (2013). The GHTorrent dataset and tool suite. *Proceedings of the 10
 
 We worked with a dump from 2018-06-01. For the most part, the mysql database is sufficient to reproduce the analyses, but for the analysis of issue comments one also needs the mongodb database. You can download the databases [here](https://ghtorrent.org/downloads.html).
 
+*requirements.txt* - python packages and their versions necessary to run the scripts.
+Create a new python environment with pyhton 3.7 (`conda create --name env-name` or `python3 -m venv env-name` ) \
+Activate environment (either `source activate env-name` or `source env-name/bin/activate`).
+Then install the package list with `pip install -r requirements.txt`.
+
 
 *scrape_pr_graphs_from_ghtorrent.py* - Script to read pull request data from the ghtorrent database and contruct graphs from it.
 
