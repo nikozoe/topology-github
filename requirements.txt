@@ -97,7 +97,7 @@ tqdm==4.46.1
 traitlets==4.3.3
 ujson==3.0.0
 Unidecode==1.1.1
-urllib3==1.25.9
+urllib3==1.26.5
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.2.1
